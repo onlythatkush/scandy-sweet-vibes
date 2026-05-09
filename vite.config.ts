@@ -14,7 +14,11 @@ export default defineConfig({
   },
   vite: {
     preview: {
-      allowedHosts: ["ospmu7xz9kwev371268pqxnw.89.167.31.143.sslip.io"],
+      allowedHosts: [
+        "ospmu7xz9kwev371268pqxnw.89.167.31.143.sslip.io",
+        "scandy-candy.se",
+        "www.scandy-candy.se",
+      ],
     },
   },
 });
