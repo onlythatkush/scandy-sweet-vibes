@@ -1,6 +1,7 @@
 import { Link } from "@tanstack/react-router";
-import { ShoppingBag, Heart, Search, Menu, Moon, Sun } from "lucide-react";
+import { Heart, Search, Menu, Moon, Sun } from "lucide-react";
 import { useEffect, useState } from "react";
+import { CartDrawer } from "@/components/site/CartDrawer";
 
 export function Header() {
   const [dark, setDark] = useState(false);
@@ -57,12 +58,7 @@ export function Header() {
             <button className="hidden h-9 w-9 place-items-center rounded-full hover:bg-muted sm:grid" aria-label="Wishlist">
               <Heart className="h-4 w-4" />
             </button>
-            <button className="relative grid h-10 w-10 place-items-center rounded-full bg-foreground text-background transition hover:scale-105" aria-label="Cart">
-              <ShoppingBag className="h-4 w-4" />
-              <span className="absolute -right-1 -top-1 grid h-5 w-5 place-items-center rounded-full bg-primary text-[10px] font-bold text-primary-foreground">
-                3
-              </span>
-            </button>
+            <CartDrawer />
             <button onClick={() => setOpen(!open)} className="grid h-9 w-9 place-items-center rounded-full hover:bg-muted md:hidden" aria-label="Menu">
               <Menu className="h-4 w-4" />
             </button>
