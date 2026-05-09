@@ -30,7 +30,7 @@ export function Header() {
         <Link to="/" className="flex flex-col items-center justify-center gap-1">
           <div className="flex items-center gap-2">
             <span className="font-display text-4xl leading-none text-primary tracking-wide">
-              SCANDY
+              Scandy Candy
             </span>
             <span className="text-2xl" aria-hidden>🐟</span>
           </div>
