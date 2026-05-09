@@ -35,7 +35,6 @@ function Index() {
     <div className="min-h-screen overflow-x-clip bg-background text-foreground">
       <Header />
       <main>
-        <Hero />
         <ShopifyProducts />
         <BuildYourMix />
         <Subscriptions />
