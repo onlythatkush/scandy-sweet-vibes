@@ -69,26 +69,26 @@ export function ShopifyProducts() {
                       <div className="grid h-full w-full place-items-center text-4xl">🍬</div>
                     )}
                     {!available && (
-                      <span className="absolute bottom-3 left-1/2 -translate-x-1/2 rounded-md bg-candy-yellow px-3 py-1 text-xs font-semibold text-foreground">
+                      <span className="absolute bottom-3 left-1/2 -translate-x-1/2 rounded-md bg-candy-yellow px-3 py-1 text-xs font-semibold text-primary">
                         Sold out
                       </span>
                     )}
                   </Link>
-                  <div className="mt-4 flex flex-col items-center gap-1">
+                  <div className="mt-4 flex flex-col items-start gap-2">
                     <Link
                       to="/product/$handle"
                       params={{ handle: p.node.handle }}
-                      className="font-display text-xl text-primary hover:opacity-80"
+                      className="text-sm font-medium text-primary hover:opacity-80"
                     >
                       {p.node.title}
                     </Link>
-                    <p className="font-display text-lg text-primary">
+                    <p className="font-display text-2xl text-primary leading-none">
                       From {parseFloat(price.amount).toFixed(0)} {price.currencyCode}
                     </p>
                     <button
                       onClick={() => handleAdd(p)}
                       disabled={!available || isAdding}
-                      className="mt-2 inline-flex items-center gap-1 text-xs font-medium uppercase tracking-widest text-primary/70 hover:text-primary disabled:opacity-40"
+                      className="sr-only"
                       aria-label={`Add ${p.node.title} to cart`}
                     >
                       <Plus className="h-3 w-3" /> Add
