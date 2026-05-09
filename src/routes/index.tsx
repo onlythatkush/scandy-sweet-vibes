@@ -12,9 +12,9 @@ import { Contact, Footer } from "@/components/site/Contact";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "ScandyCandy — Scandinavian Candy Delivered To Your Door" },
+      { title: "Scandy Candy — Scandinavian Candy Delivered To Your Door" },
       { name: "description", content: "Premium Nordic sweets, gummies, chocolates, salty licorice, and pick & mix candy boxes. Build your own mix or subscribe for a monthly Scandinavian candy drop." },
-      { property: "og:title", content: "ScandyCandy — Scandinavian Candy Delivered" },
+      { property: "og:title", content: "Scandy Candy — Scandinavian Candy Delivered" },
       { property: "og:description", content: "Premium Nordic candy, pick & mix boxes, and monthly subscriptions." },
       { property: "og:type", content: "website" },
     ],
