@@ -30,12 +30,6 @@ function Index() {
       <Header />
       <main>
         <ShopifyProducts />
-        <BuildYourMix />
-        <Subscriptions />
-        <About />
-        <Reviews />
-        <FAQ />
-        <Contact />
       </main>
       <Footer />
     </div>
