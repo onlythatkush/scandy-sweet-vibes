@@ -82,7 +82,7 @@ export function ShopifyProducts() {
                     >
                       {p.node.title}
                     </Link>
-                    <p className="mt-1 text-xs text-muted-foreground">{p.node.productType || "Lösgodis"}</p>
+                    <p className="mt-1 text-xs text-muted-foreground">Lösgodis</p>
 
                     <div className="mt-auto flex items-end justify-between pt-2">
                       <div>
