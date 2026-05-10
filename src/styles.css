@@ -41,6 +41,8 @@
   --color-candy-mint: var(--candy-mint);
   --color-candy-yellow: var(--candy-yellow);
   --color-candy-bubblegum: var(--candy-bubblegum);
+  --color-candy-cyan: var(--candy-cyan);
+  --color-candy-gold: var(--candy-gold);
 
   --font-display: "Caveat Brush", "Fraunces", cursive;
   --font-sans: "Plus Jakarta Sans", "Inter", system-ui, sans-serif;
